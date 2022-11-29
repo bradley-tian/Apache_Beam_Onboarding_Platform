@@ -1,0 +1,732 @@
+h1, h2, h3, h4, h5, h6, p, button {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.quickStart {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-right: 2rem;
+  height: 34rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.quickstartFrame1 {
+  height: 34rem;
+  grid-column: 1 / 3;
+}
+
+.quickstartFrame2 {
+  height: 34rem;
+  grid-column: 3 / 5;
+}
+
+.quickstartFrame3 {
+  height: 34rem;
+  grid-column: 5 / 7;
+}
+
+.quickstartFrame4 {
+  height: 34rem;
+  grid-column: 7 / 9;
+}
+
+.quickstartFrame5 {
+  height: 34rem;
+  grid-column: 9 / 11;
+}
+
+.quickstartFrame6 {
+  height: 34rem;
+  grid-column: 11 / 13;
+}
+
+.quickstartButton {
+  height: 34rem;
+  background-size: 100% 100%;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+}
+
+.overviewButton {
+  height: 34rem;
+  background-size: 100% 100%;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes expand {
+  from {height: 75%; background-image: url("../images/preloadOverview.png")}
+  to {height: 100%}
+}
+
+.overviewButton {
+  animation: expand;
+  animation-duration: 0.5s;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Quickstart tutorial button texture */
+#start1 {
+  background-image: url("../images/start1.png");
+}
+
+#start2 {
+  background-image: url("../images/start2.png");
+}
+
+#start3 {
+  background-image: url("../images/start3.png");
+}
+
+#start4 {
+  background-image: url("../images/start4.png");
+}
+
+#start5 {
+  background-image: url("../images/start5.png");
+}
+
+#start6 {
+  background-image: url("../images/start6.png");
+}
+
+/* Quickstart tutorial button hover texture */
+#overview1 {
+  background-image: url("../images/overview1.png");
+}
+
+#overview2 {
+  background-image: url("../images/overview2.png");
+}
+
+#overview3 {
+  background-image: url("../images/overview3.png");
+}
+
+#overview4 {
+  background-image: url("../images/overview4.png");
+}
+
+#overview5 {
+  background-image: url("../images/overview5.png");
+}
+
+#overview6 {
+  background-image: url("../images/overview6.png");
+}
+
+
+@keyframes textEase {
+  from {color: #FFD390}
+  to {color: #E85723}
+}
+
+.overviewButton p {
+  color: #E85723;
+  position: absolute;
+  display: inline-block;
+  top: 45%;
+  max-width: 8rem;
+  animation: textEase;
+  animation-duration: 0.5s;
+  font-size: 1rem;
+  word-wrap:break-word;
+}
+
+.overviewButton button {
+  position: relative;
+  min-height: 2%;
+  max-height: 6%;
+  color: #E85723;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  top: 60%;
+  filter: drop-shadow(0px 2px 1px #454545);
+}
+
+@keyframes highlightButton {
+  from {background-color: #FFFFFF}
+  to {background-color: #FFD390}
+}
+
+.overviewButton button:hover {
+  animation: highlightButton;
+  animation-duration: 0.5s;
+  background-color: #FFD390;
+}
+
+
+.qsBtn {
+  background-image: url("../images/HomeQuickStartBtn.png");
+  background-size: 100% 100%;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  /* margin-right: 300px; */
+}
+
+.cBtn {
+  background-image: url("../images/HomeCapstoneBtn.png");
+  background-size: 100% 100%;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerText {
+  font-size: max(3vw,20px);
+  margin: 0;
+  color: white;
+}
+
+.bodyText {
+  font-size: max(2vw,15px);
+  color: white;
+}
+
+.arrBegL {
+  height: 50px;
+  width: 300px;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+
+  background-image: url("../images/BegArrL.png");
+  background-color: #ffffff;
+  background-size: 100% 100%;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+
+  border: none;
+  padding: 4px;
+
+  -o-transition: background-color .2s ease-in;
+  -moz-transition: background-color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+
+.arrBegL:hover {
+  transition: background-image .2s ease-in;
+  background-image: url("../images/ArrowNormalDark.png");
+}
+
+.arrow-highlight {
+  height: 50px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  /* margin: 50px 10px 50px 10px; */
+
+  background-image: url("../images/Arrow_Highlight.png");
+  background-color: #ffffff;
+  background-size: 100% 100%;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+
+  border: none;
+  padding: 4px;
+
+  -o-transition: background-color .2s ease-in;
+  -moz-transition: background-color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+
+.arrow-highlight:hover {
+  transition: background-image .2s ease-in;
+  background-image: url("../images/ArrowHighlightDark.png");
+}
+
+.container-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  color: white;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.left {
+  position: absolute;
+  top: 28%;
+  left: 60px;
+}
+
+.imgBtn {
+  /* position: relative;
+  top: 95%;
+  left: 25%; */
+
+  background: #FFFFFF;
+  color: #FF570B;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  width: fit-content;
+  border-radius: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.imgBtn:hover {
+  cursor: pointer;
+  
+}
+
+.headerBtn{
+  background: #ffffff;
+  border: none;
+  margin-right: 15px;
+  padding: 0;
+  font-weight: 'bold';
+}
+
+.headerBtn:hover {
+  background-color: #ffffff;
+  border-bottom: 2px solid  orange;
+  cursor: pointer;  
+  margin-right: 15px;
+  padding: 0;
+} 
+
+.headerBtn:active {
+  background: #ffffff;
+  border: none;
+  margin-right: 15px;
+  padding: 0;
+  color: orange;
+}
+
+.headerBtnOn {
+  background: #ffffff;
+  border: none;
+  margin-right: 15px;
+  color: orange;
+  padding: 0;
+}
+
+.headerBtnOn:hover {
+  background-color: #ffffff;
+  border-bottom: 2px solid  orange;
+  cursor: pointer;  
+  padding: 0;
+  margin-right: 15px;
+}
+
+#pageBtn {
+  margin-right: 8px;
+}
+
+
+.btn{
+    background: #f0f0f0;
+    height: 40px;
+    width: 200px;
+    color: #fff;
+    margin: 50px 10px 50px 10px;
+    position: relative;
+  
+    font-size: 1rem; 
+    color: #000;
+    text-align: center;
+  
+    border: none;
+    padding: 4px;
+  
+     -o-transition: background-color .2s ease-in; 
+     -moz-transition: background-color .2s ease-in;
+     -webkit-transition: background-color .2s ease-in; 
+     transition: background-color .2s ease-in; 
+  }
+  
+  .btn:hover {
+     background-color: #e5e5e5;    
+  }
+  
+  .btn:active {
+     background-color: #ccc;
+  }
+  
+  .btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .btn:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #f0f0f0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .btn{
+    background: #f0f0f0;
+    height: 40px;
+    width: 200px;
+    color: #fff;
+    margin: 50px 10px 50px 10px;
+    position: relative;
+  
+    font-size: 1rem; 
+    color: #000;
+    text-align: center;
+  
+    border: none;
+    padding: 4px;
+  
+     -o-transition: background-color .2s ease-in; 
+     -moz-transition: background-color .2s ease-in;
+     -webkit-transition: background-color .2s ease-in; 
+     transition: background-color .2s ease-in; 
+  }
+  
+  .btn:hover {
+     background-color: #e5e5e5;    
+  }
+  
+  .btn:active {
+     background-color: #ccc;
+  }
+  
+  .btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .btn:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #f0f0f0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+
+.samples{
+    height: 198px;
+    width: 198px;
+    margin: 4px 10px 4px 10px;
+    border: 0px black;
+}
+
+.whyBeam{
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  margin-left: 25px;
+  padding: 20px;
+}
+
+.rowH {
+  display:flex; 
+  flex-direction:row;
+}
+
+.colH {
+  display:flex; 
+  flex-direction:column;
+}
+
+.rowBtn {
+  float: right;
+}
+
+#Section {
+  /* width: 95%; */
+  justify-self: center;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: #ffa404;
+  /* margin: 5; */
+  margin-bottom: 1.5rem;
+}
+
+.notebook1 {
+  margin: 50px 10px 50px 10px;
+
+  background-image: url("../images/BasicsFrame.png");
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+
+  border: none;
+  padding: 4px;
+
+  -o-transition: background-color .2s ease-in;
+  -moz-transition: background-color .2s ease-in;
+  -webkit-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+
+.quickStart {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-right: 2rem;
+  height: 34rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.quickstartFrame1 {
+  height: 34rem;
+  grid-column: 1 / 3;
+}
+
+.quickstartFrame2 {
+  height: 34rem;
+  grid-column: 3 / 5;
+}
+
+.quickstartFrame3 {
+  height: 34rem;
+  grid-column: 5 / 7;
+}
+
+.quickstartFrame4 {
+  height: 34rem;
+  grid-column: 7 / 9;
+}
+
+.quickstartFrame5 {
+  height: 34rem;
+  grid-column: 9 / 11;
+}
+
+.quickstartFrame6 {
+  height: 34rem;
+  grid-column: 11 / 13;
+}
+
+.quickstartButton {
+  height: 34rem;
+  background-size: 100% 100%;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+}
+
+.overviewButton {
+  height: 34rem;
+  background-size: 100% 100%;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes expand {
+  from {height: 75%; background-image: url("../images/preloadOverview.png")}
+  to {height: 100%}
+}
+
+.overviewButton {
+  animation: expand;
+  animation-duration: 0.5s;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Quickstart tutorial button texture */
+#start1 {
+  background-image: url("../images/start1.png");
+}
+
+#start2 {
+  background-image: url("../images/start2.png");
+}
+
+#start3 {
+  background-image: url("../images/start3.png");
+}
+
+#start4 {
+  background-image: url("../images/start4.png");
+}
+
+#start5 {
+  background-image: url("../images/start5.png");
+}
+
+#start6 {
+  background-image: url("../images/start6.png");
+}
+
+/* Quickstart tutorial button hover texture */
+#overview1 {
+  background-image: url("../images/overview1.png");
+}
+
+#overview2 {
+  background-image: url("../images/overview2.png");
+}
+
+#overview3 {
+  background-image: url("../images/overview3.png");
+}
+
+#overview4 {
+  background-image: url("../images/overview4.png");
+}
+
+#overview5 {
+  background-image: url("../images/overview5.png");
+}
+
+#overview6 {
+  background-image: url("../images/overview6.png");
+}
+
+@keyframes textEase {
+  from {color: #FFD390}
+  to {color: #E85723}
+}
+
+.overviewButton p {
+  color: #E85723;
+  position: absolute;
+  display: inline-block;
+  top: 45%;
+  max-width: 8rem;
+  animation: textEase;
+  animation-duration: 0.5s;
+  font-size: 1rem;
+  word-wrap:break-word;
+}
+
+.overviewButton button {
+  position: relative;
+  min-height: 2%;
+  max-height: 6%;
+  color: #E85723;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  top: 60%;
+  filter: drop-shadow(0px 2px 1px #454545);
+}
+
+@keyframes highlightButton {
+  from {background-color: #FFFFFF}
+  to {background-color: #FFD390}
+}
+
+.overviewButton button:hover {
+  animation: highlightButton;
+  animation-duration: 0.5s;
+  background-color: #FFD390;
+}
+
+#Resources {
+  background-color: #FFC9A1;
+  margin: 22px;
+  border-radius: 10px;
+}
+
+.learnMore {
+  position: relative;
+  min-height: 2rem;
+  max-height: 15%;
+  width: 20%;
+  color: #E85723;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  top: 60%;
+  filter: drop-shadow(0px 2px 1px #454545);
+}
+
+.backBtn {
+  position: relative;
+  min-height: 2%;
+  max-height: 15%;
+  color: #E85723;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  top: 60%;
+  filter: drop-shadow(0px 2px 1px #454545);
+  width: 10%;
+  margin-right: 1%;
+}
+
+.learnMore:hover {
+  animation: highlightButton;
+  animation-duration: 0.5s;
+  background-color: #FFD390;
+}
+
+.backBtn:hover {
+  animation: highlightButton;
+  animation-duration: 0.5s;
+  background-color: #FFD390;
+}
+
+#beamFrame1 {
+  width: 400px;
+  height: 150px;
+  background-image: url('../images/beamFrame1.png');
+  background-size: cover;
+}
+
+#beamFrame2 {
+  width: 400px;
+  height: 150px;
+  background-image: url('../images/beamFrame2.png');
+  background-size: cover;
+}
+
+#beamFrame3 {
+  width: 400px;
+  height: 150px;
+  background-image: url('../images/beamFrame3.png');
+  background-size: cover;
+}
