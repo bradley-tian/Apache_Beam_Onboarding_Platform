@@ -711,22 +711,35 @@ h1, h2, h3, h4, h5, h6, p, button {
 }
 
 #beamFrame1 {
-  width: 400px;
-  height: 150px;
+  width: 30%;
+  height: 20%;
   background-image: url('../images/beamFrame1.png');
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #beamFrame2 {
-  width: 400px;
-  height: 150px;
+  width: 30%;
+  height: 20%;
   background-image: url('../images/beamFrame2.png');
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #beamFrame3 {
-  width: 400px;
-  height: 150px;
+  width: 30%;
+  height: 20%;
   background-image: url('../images/beamFrame3.png');
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.frameText {
+  font-weight: 500;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-size: 1.2em;
+  text-align: center;
+  text-justify: inter-word;
+  color: #555555;
 }

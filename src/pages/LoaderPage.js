@@ -15,12 +15,11 @@ function LoaderPage() {
             <Grid container spacing={2} id='WhyBeam'>
                 <Grid item xs={3}>
                     <Box className="tblContents">
-                        <Typography mb={2} variant="h6" color="#555555">TABLE OF CONTENTS</Typography>
-                        <Typography mb={2} sx={{ fontSize: 14 }} color="#555555">Course Overview</Typography>
-                        <Typography mb={2} sx={{ fontSize: 14 }} color="#555555">Course Overview</Typography>
-                        <Typography mb={2} sx={{ fontSize: 14 }} color="#555555">Course Overview</Typography>
-                        <Typography mb={2} sx={{ fontSize: 14 }} color="#555555">Course Overview</Typography>
-                        <Typography mb={2} sx={{ fontSize: 14 }} color="#555555">Course Overview</Typography>
+                        <Typography mb={2} variant="h6" color="#555555">ADDITIONAL RESOURCES</Typography>
+                        <Typography className='addition' mb={2} sx={{ fontSize: 14 }} color="#555555" onClick={() => {window.open('https://beam.apache.org/documentation/basics/')}}>Basic Concepts of Beam</Typography>
+                        <Typography className='addition' mb={2} sx={{ fontSize: 14 }} color="#555555" onClick={() => {window.open('https://beam.apache.org/documentation/pipelines/design-your-pipeline/')}}>Designing a Pipeline</Typography>
+                        <Typography className='addition' mb={2} sx={{ fontSize: 14 }} color="#555555" onClick={() => {window.open('https://beam.apache.org/documentation/patterns/file-processing/#processing-files-as-they-arrive ')}}>File Processing Patterns</Typography>
+                        <Typography className='addition' mb={2} sx={{ fontSize: 14 }} color="#555555" onClick={() => {window.open('https://beam.apache.org/documentation/glossary/ ')}}>Glossary</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={9} align-items="start">

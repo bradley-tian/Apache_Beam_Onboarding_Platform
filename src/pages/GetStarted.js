@@ -90,14 +90,20 @@ function GetStartedPage() {
                     <Typography variant="body2" color="#555555">Learn to use Beam to create data-processing pipelines that run on supported processing back-ends.</Typography>
                 </Stack>
                 <Stack direction="row" justifyContent="space-between" id="CourseBtns" ml={3}>
-                    <button className="confGS" type="button" onClick={() => navigate('/loader')}>Configurations</button>
-                    <button className="tranGS" type="button" onClick={() => navigate('/transform')}>Transforming</button>
-                    <button className="runGS" type="button" onClick={() => navigate('/runner')}>Running</button>
+                    <button className="GSButton" id="confGS" onClick={() => navigate('/loader')}>Configurations</button>
+                    <button className="GSButton" id="transGS" onClick={() => navigate('/transform')}>Transforming</button>
+                    <button className="GSButton" id="runGS" onClick={() => navigate('/runner')}>Running</button>
                 </Stack>
                 <Stack direction="row" justifyContent="space-between" id="CourseBtns" mt={3} ml={3}>
-                    <div id='beamFrame1'></div>
-                    <div id='beamFrame2'></div>
-                    <div id='beamFrame3'></div>
+                    <div id='beamFrame1'>
+                        <h6 className='frameText'>This module covers the basics of Beam, including Beam's main features and a crash course on P-Transforms.</h6>
+                    </div>
+                    <div id='beamFrame2'>
+                        <h6 className='frameText'>This module kickstarts learning what a P-Transform is, how it is used, and advanced transforms.</h6>
+                    </div>
+                    <div id='beamFrame3'>
+                        <h6 className='frameText'>This module introduces various methods and platforms for deploying and running your Beam pipelines.</h6>
+                    </div>
                 </Stack>
             </div>
             <div>

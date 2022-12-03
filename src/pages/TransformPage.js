@@ -13,14 +13,13 @@ function TransformPage() {
         <>
             <Grid container spacing={2} id='WhyBeam'>
                 <Grid item xs={3}>
-                <Box className="tblContents">
-                <Typography mb={2} variant="h6" color="#555555">TABLE OF CONTENTS</Typography>
-                <Typography mb={2} sx={{fontSize: 14}} color="#555555">Course Overview</Typography>
-                <Typography mb={2} sx={{fontSize: 14}} color="#555555">Course Overview</Typography>
-                <Typography mb={2} sx={{fontSize: 14}} color="#555555">Course Overview</Typography>
-                <Typography mb={2} sx={{fontSize: 14}} color="#555555">Course Overview</Typography>
-                <Typography mb={2} sx={{fontSize: 14}} color="#555555">Course Overview</Typography>
-                </Box>
+                    <Box className="tblContents">
+                        <Typography mb={2} variant="h6" color="#555555">ADDITIONAL RESOURCES</Typography>
+                        <Typography className='addition' mb={2} sx={{ fontSize: 14 }} color="#555555" onClick={() => { window.open('https://beam.apache.org/documentation/transforms/python/overview/') }}>Transforms Catalog (Python)</Typography>
+                        <Typography className='addition' mb={2} sx={{ fontSize: 14 }} color="#555555" onClick={() => { window.open('https://beam.apache.org/documentation/transforms/java/overview/') }}>Transforms Catalog (Java)</Typography>
+                        <Typography className='addition' mb={2} sx={{ fontSize: 14 }} color="#555555" onClick={() => { window.open('https://beam.apache.org/documentation/patterns/side-inputs/ ') }}>Side Input Patterns</Typography>
+                        <Typography className='addition' mb={2} sx={{ fontSize: 14 }} color="#555555" onClick={() => { window.open('https://beam.apache.org/documentation/io/connectors/') }}>I/O Connectors</Typography>
+                    </Box>
                 </Grid>
 
                 <Grid item xs={9} align-items="start">
@@ -42,9 +41,9 @@ function TransformPage() {
                         <button className="transform-highlight" type="button" onClick={() => navigate('/transform')}><div class="shift-up">Transforming</div></button>
                         <button className="running-normal" type="button" onClick={() => navigate('/runner')}>Running</button>
                     </Stack>
-                    
+
                     <hr className="notebookDivider"></hr>
-                    <Box ml={1} mr={3} mb={2} p={3} pt={2} pb={2} id='Notebook' onClick={() => {window.open('https://colab.research.google.com/drive/1qEF_Isa8QPMoalE83ZawK4EQiLKj6N--#scrollTo=42B-64Lvef3K')}}>
+                    <Box ml={1} mr={3} mb={2} p={3} pt={2} pb={2} id='Notebook' onClick={() => { window.open('https://colab.research.google.com/drive/1qEF_Isa8QPMoalE83ZawK4EQiLKj6N--#scrollTo=42B-64Lvef3K') }}>
                         <Stack spacing={1}>
                             <Typography mr={0.5} variant="h6">Intro to Transforms</Typography>
                             <Stack>

@@ -382,85 +382,48 @@
     height: 4rem;
   }
 
-  .confGS {
-    height: 55px;
-    width: 400px;
-    /* margin: 50px 10px 50px 10px; */
-    margin-bottom: 20px;
-    margin-top: 20px;
+  .GSButton {
+    height: 3rem;
+    width: 30%;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
     
+    background-color: #ffffff;
+    background-size: 100% 100%;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+  
+    border: none;
+    padding: 4px;
+  
+    -o-transition: background-color .2s ease-in;
+    -moz-transition: background-color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+  }
+
+  #confGS {
     background-image: url("../images/ConfigurationsHoverButton.png");
-    background-color: #ffffff;
-    background-size: 100% 100%;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-  
-    border: none;
-    padding: 4px;
-  
-    -o-transition: background-color .2s ease-in;
-    -moz-transition: background-color .2s ease-in;
-    -webkit-transition: background-color .2s ease-in;
-    transition: background-color .2s ease-in;
   }
 
-  .confGS:hover {
-    cursor: pointer;
-  }
-
-  .tranGS {
-    height: 55px;
-    width: 400px;
-    /* margin: 50px 10px 50px 10px; */
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
+  #transGS {
     background-image: url("../images/TransformHoverButton.png");
-    background-color: #ffffff;
-    background-size: 100% 100%;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-  
-    border: none;
-    padding: 4px;
-  
-    -o-transition: background-color .2s ease-in;
-    -moz-transition: background-color .2s ease-in;
-    -webkit-transition: background-color .2s ease-in;
-    transition: background-color .2s ease-in;
   }
 
-  .tranGS:hover {
-    cursor: pointer;
-  }
-
-  .runGS {
-    height: 55px;
-    width: 400px;
-    /* margin: 50px 10px 50px 10px; */
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
+  #runGS {
     background-image: url("../images/RunningHoverButton.png");
-    background-color: #ffffff;
-    background-size: 100% 100%;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-  
-    border: none;
-    padding: 4px;
-  
-    -o-transition: background-color .2s ease-in;
-    -moz-transition: background-color .2s ease-in;
-    -webkit-transition: background-color .2s ease-in;
-    transition: background-color .2s ease-in;
   }
 
-  .runGS:hover {
-    cursor: pointer;
+  @keyframes highlightGSButton {
+    from {height: 3rem}
+    to {height: 3.5rem}
+  }
+
+  .GSButton:hover {
+    animation: highlightGSButton;
+    animation-duration: 0.3s;
+    height: 3.5rem;
   }
 
   .configurations-normal {
@@ -667,4 +630,15 @@
   @keyframes highlightButton {
     from {background-color: #FFFFFF}
     to {background-color: #FFD390}
+  }
+
+  @keyframes highlightText {
+    from {color: #555555}
+    to {color: #ec8e00}
+  }
+
+  .addition:hover {
+    animation: highlightText;
+    animation-duration: 0.5s;
+    color: #ec8e00;
   }
