@@ -46,7 +46,7 @@ export default function QuickStartPage() {
     return (
         <>
             <Grid container spacing={2}>
-                <Grid item xs={3}>
+                <Grid item xs={3}> 
                     <Box className="whyBeam">
                         <Typography mb={2} variant="h6" color="#555555" fontWeight="bold">WHY BEAM</Typography>
                         <Stack direction="row" spacing={2} mb={1} alignItems='center'>
@@ -78,11 +78,11 @@ export default function QuickStartPage() {
                             </Stack>
                         </Stack>
                         <Stack spacing={1} mt={3} mb={3}>
-                            <Typography variant="h7" fontWeight="bold" color="#555555">Write Once, Run Anywhere</Typography>
+                            <Typography fontWeight="bold" fontSize="32" color="#555555">Write Once, Run Anywhere</Typography>
                             <img src={RunnerLogos} />
                         </Stack>
                         <Stack spacing={1} mt={3}>
-                            <Typography variant="h7" fontWeight="bold" color="#555555">Create Multi-Language Pipelines</Typography>
+                            <Typography fontWeight="bold" fontSize="32" color="#555555">Create Multi-Language Pipelines</Typography>
                             <img src={LanguageLogos} />
                         </Stack>
                     </Box>

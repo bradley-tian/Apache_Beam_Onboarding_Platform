@@ -22,42 +22,42 @@ function GetStartedPage() {
         <>
             <Grid container spacing={2}>
                 <Grid item xs={3} mb={4.1}>
-                    <Box className="whyBeam">
-                        <Typography mb={2} variant="h6" color="#555555">WHY BEAM</Typography>
-                        <Stack direction="row" spacing={2} mb={1}>
+                <Box className="whyBeam">
+                        <Typography mb={2} variant="h6" color="#555555" fontWeight="bold">WHY BEAM</Typography>
+                        <Stack direction="row" spacing={2} mb={1} alignItems='center'>
                             <Avatar src={Icon1} container={1} />
                             <Stack>
-                                <Typography variant="h6">Powerful Abstraction</Typography>
-                                <Typography sx={{ fontSize: 10 }}>Powerful abstractions that omit low-level details of distributed data processing, such as coordinating individual workers, reading from sources and writing to sinks, etc.</Typography>
+                                <Typography color="#555555" fontSize="40" fontWeight="bold">Powerful Abstraction</Typography>
+                                <Typography sx={{ fontSize: 11 }}>Powerful abstractions that omit low-level details of distributed data processing, such as coordinating individual workers, reading from sources and writing to sinks, etc.</Typography>
                             </Stack>
                         </Stack>
-                        <Stack direction="row" spacing={2} mb={1}>
+                        <Stack direction="row" spacing={2} mb={1} alignItems='center'>
                             <Avatar src={Icon2} container={1} />
                             <Stack>
-                                <Typography variant="h6">Unified Models</Typography>
-                                <Typography sx={{ fontSize: 10 }}>A simplified, single programming model for both batch and streaming use cases.</Typography>
+                                <Typography color="#555555" fontSize="40" fontWeight="bold">Unified Models</Typography>
+                                <Typography sx={{ fontSize: 11 }}>A simplified, single programming model for both batch and streaming use cases.</Typography>
                             </Stack>
                         </Stack>
-                        <Stack direction="row" spacing={2} mb={1}>
+                        <Stack direction="row" spacing={2} mb={1} alignItems='center'>
                             <Avatar src={Icon3} container={1} />
                             <Stack>
-                                <Typography variant="h6">Ease of Adoption</Typography>
-                                <Typography sx={{ fontSize: 10 }}>Apache Beam is easy to adopt and implement because it abstracts you from low-level details and provides freedom of choice between programming languages.</Typography>
+                                <Typography color="#555555" fontSize="40" fontWeight="bold">Ease of Adoption</Typography>
+                                <Typography sx={{ fontSize: 11 }}>Apache Beam is easy to adopt and implement because it abstracts you from low-level details and provides freedom of choice between programming languages.</Typography>
                             </Stack>
                         </Stack>
-                        <Stack direction="row" spacing={2} mb={1}>
+                        <Stack direction="row" spacing={2} mb={1} alignItems='center'>
                             <Avatar src={Icon4} container={1} />
                             <Stack>
-                                <Typography variant="h6">Extensibility</Typography>
-                                <Typography sx={{ fontSize: 10 }}>Apache Beam is open source and extensible. Multiple projects are built on top of Apache Beam and leverage its ability to “write once, run anywhere.”</Typography>
+                                <Typography color="#555555" fontSize="40" fontWeight="bold">Extensibility</Typography>
+                                <Typography sx={{ fontSize: 11 }}>Apache Beam is open source and extensible. Multiple projects are built on top of Apache Beam and leverage its ability to “write once, run anywhere.”</Typography>
                             </Stack>
                         </Stack>
                         <Stack spacing={1} mt={3} mb={3}>
-                            <Typography variant="h7" fontWeight="bold" color="#555555">Write Once, Run Anywhere</Typography>
+                            <Typography fontWeight="bold" fontSize="32" color="#555555">Write Once, Run Anywhere</Typography>
                             <img src={RunnerLogos} />
                         </Stack>
                         <Stack spacing={1} mt={3}>
-                            <Typography variant="h7" fontWeight="bold" color="#555555">Create Multi-Language Pipelines</Typography>
+                            <Typography fontWeight="bold" fontSize="32" color="#555555">Create Multi-Language Pipelines</Typography>
                             <img src={LanguageLogos} />
                         </Stack>
                     </Box>
