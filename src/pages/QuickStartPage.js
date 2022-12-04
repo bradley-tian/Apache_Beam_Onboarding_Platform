@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Grid, Box, Typography, Stack, Avatar } from "@mui/material";
 import "./GetStarted.css";
+import "./LoaderPage.css";
 import Icon1 from '../images/Icon1.png';
 import Icon2 from '../images/Icon2.png';
 import Icon3 from '../images/Icon3.png';
@@ -46,34 +47,34 @@ export default function QuickStartPage() {
         <>
             <Grid container spacing={2}>
                 <Grid item xs={3}>
-                    <Box className="whyBeam" sx={{ height: 570 }}>
-                        <Typography mb={2} variant="h6" color="#555555">WHY BEAM</Typography>
-                        <Stack direction="row" spacing={2} mb={1}>
+                    <Box className="whyBeam">
+                        <Typography mb={2} variant="h6" color="#555555" fontWeight="bold">WHY BEAM</Typography>
+                        <Stack direction="row" spacing={2} mb={1} alignItems='center'>
                             <Avatar src={Icon1} container={1} />
                             <Stack>
-                                <Typography variant="h6">Powerful Abstraction</Typography>
-                                <Typography sx={{ fontSize: 10 }}>Powerful abstractions that omit low-level details of distributed data processing, such as coordinating individual workers, reading from sources and writing to sinks, etc.</Typography>
+                                <Typography color="#555555" fontSize="40" fontWeight="bold">Powerful Abstraction</Typography>
+                                <Typography sx={{ fontSize: 11 }}>Powerful abstractions that omit low-level details of distributed data processing, such as coordinating individual workers, reading from sources and writing to sinks, etc.</Typography>
                             </Stack>
                         </Stack>
-                        <Stack direction="row" spacing={2} mb={1}>
+                        <Stack direction="row" spacing={2} mb={1} alignItems='center'>
                             <Avatar src={Icon2} container={1} />
                             <Stack>
-                                <Typography variant="h6">Unified Models</Typography>
-                                <Typography sx={{ fontSize: 10 }}>A simplified, single programming model for both batch and streaming use cases.</Typography>
+                                <Typography color="#555555" fontSize="40" fontWeight="bold">Unified Models</Typography>
+                                <Typography sx={{ fontSize: 11 }}>A simplified, single programming model for both batch and streaming use cases.</Typography>
                             </Stack>
                         </Stack>
-                        <Stack direction="row" spacing={2} mb={1}>
+                        <Stack direction="row" spacing={2} mb={1} alignItems='center'>
                             <Avatar src={Icon3} container={1} />
                             <Stack>
-                                <Typography variant="h6">Ease of Adoption</Typography>
-                                <Typography sx={{ fontSize: 10 }}>Apache Beam is easy to adopt and implement because it abstracts you from low-level details and provides freedom of choice between programming languages.</Typography>
+                                <Typography color="#555555" fontSize="40" fontWeight="bold">Ease of Adoption</Typography>
+                                <Typography sx={{ fontSize: 11 }}>Apache Beam is easy to adopt and implement because it abstracts you from low-level details and provides freedom of choice between programming languages.</Typography>
                             </Stack>
                         </Stack>
-                        <Stack direction="row" spacing={2} mb={1}>
+                        <Stack direction="row" spacing={2} mb={1} alignItems='center'>
                             <Avatar src={Icon4} container={1} />
                             <Stack>
-                                <Typography variant="h6">Extensibility</Typography>
-                                <Typography sx={{ fontSize: 10 }}>Apache Beam is open source and extensible. Multiple projects are built on top of Apache Beam and leverage its ability to “write once, run anywhere.”</Typography>
+                                <Typography color="#555555" fontSize="40" fontWeight="bold">Extensibility</Typography>
+                                <Typography sx={{ fontSize: 11 }}>Apache Beam is open source and extensible. Multiple projects are built on top of Apache Beam and leverage its ability to “write once, run anywhere.”</Typography>
                             </Stack>
                         </Stack>
                         <Stack spacing={1} mt={3} mb={3}>
@@ -158,6 +159,28 @@ export default function QuickStartPage() {
                     </Stack>
                 </Grid>
             </Grid>
+            <div className="buttonNav">
+                <Stack spacing={1} ml={1} mb={2}>
+                    <Typography variant="h5" fontWeight='bold' color="#555555">Learn more about Beam</Typography>
+                    <Typography variant="body2" color="#555555">See more resources to learn Beam grouped by process</Typography>
+                </Stack>
+                <Stack direction="row" justifyContent="space-between" id="CourseBtns" ml={3}>
+                    <button className="GSButton" id="confGS" onClick={() => navigate('/config')}>Configurations</button>
+                    <button className="GSButton" id="transGS" onClick={() => navigate('/transform')}>Transforming</button>
+                    <button className="GSButton" id="runGS" onClick={() => navigate('/runner')}>Running</button>
+                </Stack>
+                <Stack direction="row" justifyContent="space-between" id="CourseBtns" mt={3} ml={3}>
+                    <div id='beamFrame1'>
+                        <h6 className='frameText'>Learn the different ways Apache Beam’s pipelines can be configured, from basic pipeline parameters to Spark runners.</h6>
+                    </div>
+                    <div id='beamFrame2'>
+                        <h6 className='frameText'>Operations in your pipeline that provide you a general processing framework for working in Apache Beam.</h6>
+                    </div>
+                    <div id='beamFrame3'>
+                        <h6 className='frameText'>Apache Beam uses runners to execute pipelines on your machine, validating pipelines to adhere closely to the model.</h6>
+                    </div>
+                </Stack>
+            </div>
             <div>
                 <Stack spacing={1} ml={3} mt={4}>
                     <Typography variant="h5" fontWeight='bold' color="#555555">Resources and Next Steps</Typography>
@@ -166,18 +189,18 @@ export default function QuickStartPage() {
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
                         <Box id="Resources">
-                            <Stack spacing={1} ml={3} pt={2} pb={2}>
+                            <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
                                 <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Java</Typography>
                                 <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-java/') }}>Learn More</button>
                             </Stack>
                         </Box>
                         <Box id="Resources">
-                            <Stack spacing={1} ml={3} mt={4} pt={2} pb={2}>
+                            <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
                                 <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Python</Typography>
                                 <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-py/') }}>Learn More</button>
                             </Stack>
                         </Box><Box id="Resources">
-                            <Stack spacing={1} ml={3} mt={4} pt={2} pb={2}>
+                            <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
                                 <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Go</Typography>
                                 <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-go/') }}>Learn More</button>
                             </Stack>
@@ -185,17 +208,17 @@ export default function QuickStartPage() {
                     </Grid>
                     <Grid item xs={6}>
                         <Box id="Resources">
-                            <Stack spacing={1} ml={3} pt={2} pb={2}>
+                            <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
                                 <Typography variant="h6" color="#555555">Additional Examples: Word Counter Variants</Typography>
                                 <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/wordcount-example/') }}>Learn More</button>
                             </Stack>
                         </Box><Box id="Resources">
-                            <Stack spacing={1} ml={3} mt={4} pt={2} pb={2}>
+                            <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
                                 <Typography variant="h6" color="#555555">Additional Examples: Mobile Gaming Pipelines</Typography>
                                 <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/mobile-gaming-example/') }}>Learn More</button>
                             </Stack>
                         </Box><Box id="Resources">
-                            <Stack spacing={1} ml={3} mt={4} pt={2} pb={2}>
+                            <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
                                 <Typography variant="h6" color="#555555">Explore the Beam Community</Typography>
                                 <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/community/') }}>Learn More</button>
                             </Stack>

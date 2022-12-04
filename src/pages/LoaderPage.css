@@ -642,3 +642,19 @@
     animation-duration: 0.5s;
     color: #ec8e00;
   }
+
+  #CourseBtnsHome {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+
+  .tocTri {
+    width: 12px;
+    height: 12px;
+  }
+
+  .courseLeft:hover {
+    cursor: pointer;
+  }

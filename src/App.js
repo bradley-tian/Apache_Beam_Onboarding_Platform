@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<GetStartedPage />}/>
           <Route path='/quickstart' element={<QuickStartPage />}/>
-          <Route path='/loader' element={<LoaderPage />}/>
+          <Route path='/config' element={<LoaderPage />}/>
           <Route path='/transform' element={<TransformPage />}/>
           <Route path='/runner' element={<RunnerPage />}/>
         </Routes>

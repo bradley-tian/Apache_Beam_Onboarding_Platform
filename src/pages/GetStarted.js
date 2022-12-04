@@ -11,6 +11,7 @@ import Icon3 from '../images/Icon3.png';
 import Icon4 from '../images/Icon4.png';
 import RunnerLogos from '../images/RunnerLogos.png';
 import LanguageLogos from '../images/LanguageLogos.png';
+import Triangle from '../images/Triangle.png';
 
 
 function GetStartedPage() {
@@ -84,72 +85,110 @@ function GetStartedPage() {
                     </Box>
                 </Grid>
             </Grid>
-            <div>
-                <Stack spacing={1} ml={3} mb={2}>
+            <div className="buttonNav">
+                <Stack spacing={1} ml={1} mb={2}>
                     <Typography variant="h5" fontWeight='bold' color="#555555">Learn more about Beam</Typography>
                     <Typography variant="body2" color="#555555">Learn to use Beam to create data-processing pipelines that run on supported processing back-ends.</Typography>
                 </Stack>
                 <Stack direction="row" justifyContent="space-between" id="CourseBtns" ml={3}>
-                    <button className="GSButton" id="confGS" onClick={() => navigate('/loader')}>Configurations</button>
+                    <button className="GSButton" id="confGS" onClick={() => navigate('/config')}>Configurations</button>
                     <button className="GSButton" id="transGS" onClick={() => navigate('/transform')}>Transforming</button>
                     <button className="GSButton" id="runGS" onClick={() => navigate('/runner')}>Running</button>
                 </Stack>
                 <Stack direction="row" justifyContent="space-between" id="CourseBtns" mt={3} ml={3}>
                     <div id='beamFrame1'>
-                        <h6 className='frameText'>This module covers the basics of Beam, including Beam's main features and a crash course on P-Transforms.</h6>
+                        <h6 className='frameText'>Learn the different ways Apache Beam’s pipelines can be configured, from basic pipeline parameters to Spark runners.</h6>
                     </div>
                     <div id='beamFrame2'>
-                        <h6 className='frameText'>This module kickstarts learning what a P-Transform is, how it is used, and advanced transforms.</h6>
+                        <h6 className='frameText'>Operations in your pipeline that provide you a general processing framework for working in Apache Beam.</h6>
                     </div>
                     <div id='beamFrame3'>
-                        <h6 className='frameText'>This module introduces various methods and platforms for deploying and running your Beam pipelines.</h6>
+                        <h6 className='frameText'>Apache Beam uses runners to execute pipelines on your machine, validating pipelines to adhere closely to the model.</h6>
                     </div>
                 </Stack>
-            </div>
+            </div >
+            <div>
+            <Stack spacing={1} ml={3} mb={2} mt={5}>
+                <Typography variant="h5" fontWeight='bold' color="#555555">Use Cases</Typography>
+                <Typography variant="body2" color="#555555">Try your hand at different real-world examples</Typography>
+            </Stack>
+            <Stack direction="row" justifyContent="space-between" id="CourseBtnsHome" mt={3} ml={3}>
+                <Box mt={2} pb={1} sx={{backgroundColor: "white", border: 2, borderRadius: "10px", borderColor: 'orange', width: 650, height: 150}} onClick={() => { window.open('https://beam.apache.org/documentation/ml/overview/') }}>
+                    <Typography fontSize="18px" p={2} fontWeight="bold">Machine Learning</Typography>
+                    <Stack direction="row" alignItems="center" spacing={2} mb={1} pl={4}>
+                        <img className='tocTri' src={Triangle} container={1}/>
+                        <Typography className='courseLeft' mb={2} sx={{fontSize: 14}} color="#555555" onClick={() => window.open('https://beam.apache.org/documentation/sdks/python-machine-learning/')}>Machine Learning with Python using the RunInference API</Typography>
+                    </Stack>
+                    <Stack direction="row" alignItems="center" spacing={2} mb={1} pl={4}>
+                        <img className='tocTri' src={Triangle} container={1}/>
+                        <Typography className='courseLeft' mb={2} sx={{fontSize: 14}} color="#555555" onClick={() => window.open('https://cloud.google.com/dataflow/docs/tutorials/molecules-walkthrough')}>Machine Learning Preprocessing and Prediction</Typography>
+                    </Stack>
+                    <Stack direction="row" alignItems="center" spacing={2} mb={1} pl={4}>
+                        <img className='tocTri' src={Triangle} container={1}/>
+                        <Typography className='courseLeft' mb={2} sx={{fontSize: 14}} color="#555555" onClick={() => window.open('https://cloud.google.com/blog/products/ai-machine-learning/pre-processing-tensorflow-pipelines-tftransform-google-cloud')}>Machine Learning Preprocessing</Typography>
+                    </Stack>
+                </Box>
+                <Box mt={2} pb={1} sx={{backgroundColor: "white", border: 2, borderRadius: "10px", borderColor: 'orange', width: 650, height: 150}}>
+                    <Typography fontSize="18px" p={2} fontWeight="bold">Advanced Concepts</Typography>
+                    <Stack direction="row" alignItems="center" spacing={2} mb={1} pl={4}>
+                        <img className='tocTri' src={Triangle} container={1}/>
+                        <Typography className='courseLeft' mb={2} sx={{fontSize: 14}} color="#555555" onClick={() => window.open('https://amygdala.github.io/dataflow/app_engine/2017/10/24/gae_dataflow.html')}>Running on AppEngine</Typography>
+                    </Stack>
+                    <Stack direction="row" alignItems="center" spacing={2} mb={1} pl={4}>
+                        <img className='tocTri' src={Triangle} container={1}/>
+                        <Typography className='courseLeft' mb={2} sx={{fontSize: 14}} color="#555555" onClick={() => window.open('https://beam.apache.org/blog/2017/02/13/stateful-processing.html')}>Stateful Processing</Typography>
+                    </Stack>
+                    <Stack direction="row" alignItems="center" spacing={2} mb={13} pl={4}>
+                        <img className='tocTri' src={Triangle} container={1}/>
+                        <Typography className='courseLeft' mb={2} sx={{fontSize: 14}} color="#555555" onClick={() => window.open('https://beam.apache.org/blog/2017/08/28/timely-processing.html')}>Timely and Stateful Processing</Typography>
+                    </Stack>
+                </Box>
+            </Stack>
+        </div>
             <div>
             <Stack spacing={1} ml={3} mt={4}>
-                    <Typography variant="h5" fontWeight='bold' color="#555555">Resources and Next Steps</Typography>
-                    <Typography variant="body2" color="#555555">Enforce and expand your knowledge of Beam with more in-depth materials.</Typography>
-                </Stack>
-                <Grid container spacing={2}>
-                    <Grid item xs={6}>
-                        <Box id="Resources">
-                            <Stack spacing={1} ml={3} pt={2} pb={2}>
-                                <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Java</Typography>
-                                <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-java/') }}>Learn More</button>
-                            </Stack>
-                        </Box>
-                        <Box id="Resources">
-                            <Stack spacing={1} ml={3} mt={4} pt={2} pb={2}>
-                                <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Python</Typography>
-                                <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-py/') }}>Learn More</button>
-                            </Stack>
-                        </Box><Box id="Resources">
-                            <Stack spacing={1} ml={3} mt={4} pt={2} pb={2}>
-                                <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Go</Typography>
-                                <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-go/') }}>Learn More</button>
-                            </Stack>
-                        </Box>
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Box id="Resources">
-                            <Stack spacing={1} ml={3} pt={2} pb={2}>
-                                <Typography variant="h6" color="#555555">Additional Examples: Word Counter Variants</Typography>
-                                <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/wordcount-example/') }}>Learn More</button>
-                            </Stack>
-                        </Box><Box id="Resources">
-                            <Stack spacing={1} ml={3} mt={4} pt={2} pb={2}>
-                                <Typography variant="h6" color="#555555">Additional Examples: Mobile Gaming Pipelines</Typography>
-                                <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/mobile-gaming-example/') }}>Learn More</button>
-                            </Stack>
-                        </Box><Box id="Resources">
-                            <Stack spacing={1} ml={3} mt={4} pt={2} pb={2}>
-                                <Typography variant="h6" color="#555555">Explore the Beam Community</Typography>
-                                <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/community/') }}>Learn More</button>
-                            </Stack>
-                        </Box>
-                    </Grid>
-                </Grid>
+                <Typography variant="h5" fontWeight='bold' color="#555555">Resources and Next Steps</Typography>
+                <Typography variant="body2" color="#555555">Additional materials.</Typography>
+            </Stack>
+            <Grid container spacing={2}>
+            <Grid item xs={6}>
+                <Box id="Resources">
+                    <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
+                        <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Java</Typography>
+                        <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-java/') }}>Learn More</button>
+                    </Stack>
+                </Box>
+                <Box id="Resources">
+                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
+                        <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Python</Typography>
+                        <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-py/') }}>Learn More</button>
+                    </Stack>
+                </Box><Box id="Resources">
+                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
+                        <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Go</Typography>
+                        <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-go/') }}>Learn More</button>
+                    </Stack>
+                </Box>
+            </Grid>
+            <Grid item xs={6}>
+                <Box id="Resources">
+                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
+                        <Typography variant="h6" color="#555555">Additional Examples: Word Counter Variants</Typography>
+                        <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/wordcount-example/') }}>Learn More</button>
+                    </Stack>
+                </Box><Box id="Resources">
+                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
+                        <Typography variant="h6" color="#555555">Additional Examples: Mobile Gaming Pipelines</Typography>
+                        <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/mobile-gaming-example/') }}>Learn More</button>
+                    </Stack>
+                </Box><Box id="Resources">
+                <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
+                        <Typography variant="h6" color="#555555">Explore the Beam Community</Typography>
+                        <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/community/') }}>Learn More</button>
+                    </Stack>
+                </Box>
+            </Grid>
+            </Grid>
             </div>
         </>
     )

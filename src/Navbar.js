@@ -28,7 +28,7 @@ export default function ButtonAppBar() {
     <Box sx={{ flexGrow: 1, mb: 4 }}>
       <AppBar position="static" style={{backgroundColor: "white", color: "black"}}>
         <Toolbar>
-          <img src="https://beam.apache.org/images/beam_logo_navbar.png" className='logo'/>
+          <img src="https://beam.apache.org/images/beam_logo_navbar.png" className='logo' onClick={() => {window.open('https://beam.apache.org/')}}/>
           <button className="headerBtn" onClick={() => {window.open('https://beam.apache.org/about/')}} theme={theme} margin="8">About</button>
           <button 
             className="headerBtn"

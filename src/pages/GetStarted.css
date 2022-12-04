@@ -300,7 +300,13 @@ h1, h2, h3, h4, h5, h6, p, button {
 
 .imgBtn:hover {
   cursor: pointer;
-  
+}
+
+#CourseBtnsDropdown {
+  /* border: 5px; */
+  border-color: "FF6D00";
+  background-color: white;
+  border-radius: 10px;
 }
 
 .headerBtn{
@@ -738,8 +744,12 @@ h1, h2, h3, h4, h5, h6, p, button {
   font-weight: 500;
   margin-left: 8%;
   margin-right: 8%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: center;
   text-justify: inter-word;
   color: #555555;
+}
+
+.buttonNav {
+  margin-left: 1rem;
 }
