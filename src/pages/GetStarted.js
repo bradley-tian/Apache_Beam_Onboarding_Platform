@@ -21,7 +21,7 @@ function GetStartedPage() {
     return (
         <>
             <Grid container spacing={2}>
-                <Grid item xs={3} mb={4.1}>
+                <Grid item xs={3} mb={2.1}>
                 <Box className="whyBeam">
                         <Typography mb={2} variant="h6" color="#555555" fontWeight="bold">WHY BEAM</Typography>
                         <Stack direction="row" spacing={2} mb={1} alignItems='center'>
@@ -71,7 +71,7 @@ function GetStartedPage() {
                         <Stack justifyContent="center" alignItems="center" spacing={3} direction='column'>
                             <Stack justifyContent="center" alignItems="center" spacing={1}>
                                 <h4 className="headerText">New to Beam?</h4>
-                                <h6 className="bodyText">Check out the quickstart tutorial!</h6>
+                                <Typography color="white" sx={{fontSize: 18}} >Check out the quickstart tutorial!</Typography>
                             </Stack>
                             <button className="imgBtn" onClick={() => navigate('/quickstart')}>START HERE</button>
                         </Stack>
@@ -79,7 +79,7 @@ function GetStartedPage() {
                     <Box className="cBtn" sx={{ width: .98, height: .3, mb: 2 }}>
                         <Stack spacing={1} ml={5}>
                             <Typography variant="h5" color="white" sx={{ fontWeight: 'bold' }}>Ready for more?</Typography>
-                            <Typography variant="h6" color="white" margin-bottom='8' sx={{ fontWeight: 'bold' }}>Try an end-to-end example using real-world data.</Typography>
+                            <Typography color="white" fontSize="30" margin-bottom='8'>Try an end-to-end example using real-world data.</Typography>
                         </Stack>
                         <button className="imgBtn" mr={5} onClick={() => navigate('/quickstart')}>TRY IT OUT!</button>
                     </Box>
@@ -108,12 +108,12 @@ function GetStartedPage() {
                 </Stack>
             </div >
             <div>
-            <Stack spacing={1} ml={3} mb={2} mt={5}>
+            <Stack spacing={1} ml={3} mb={4} mt={5}>
                 <Typography variant="h5" fontWeight='bold' color="#555555">Use Cases</Typography>
                 <Typography variant="body2" color="#555555">Try your hand at different real-world examples</Typography>
             </Stack>
-            <Stack direction="row" justifyContent="space-between" id="CourseBtnsHome" mt={3} ml={3}>
-                <Box mt={2} pb={1} sx={{backgroundColor: "white", border: 2, borderRadius: "10px", borderColor: 'orange', width: 650, height: 150}} onClick={() => { window.open('https://beam.apache.org/documentation/ml/overview/') }}>
+            <Stack direction="row" justifyContent="space-between" id="CourseBtnsHome" mt={3} ml={3} spacing={4}>
+                <Box pb={1} sx={{backgroundColor: "white", border: 2, borderRadius: "10px", borderColor: 'orange', width: '50%', height: 150}}>
                     <Typography fontSize="18px" p={2} fontWeight="bold">Machine Learning</Typography>
                     <Stack direction="row" alignItems="center" spacing={2} mb={1} pl={4}>
                         <img className='tocTri' src={Triangle} container={1}/>
@@ -128,7 +128,7 @@ function GetStartedPage() {
                         <Typography className='courseLeft' mb={2} sx={{fontSize: 14}} color="#555555" onClick={() => window.open('https://cloud.google.com/blog/products/ai-machine-learning/pre-processing-tensorflow-pipelines-tftransform-google-cloud')}>Machine Learning Preprocessing</Typography>
                     </Stack>
                 </Box>
-                <Box mt={2} pb={1} sx={{backgroundColor: "white", border: 2, borderRadius: "10px", borderColor: 'orange', width: 650, height: 150}}>
+                <Box pb={1} sx={{backgroundColor: "white", border: 2, borderRadius: "10px", borderColor: 'orange', width: '50%', height: 150}}>
                     <Typography fontSize="18px" p={2} fontWeight="bold">Advanced Concepts</Typography>
                     <Stack direction="row" alignItems="center" spacing={2} mb={1} pl={4}>
                         <img className='tocTri' src={Triangle} container={1}/>
@@ -145,6 +145,7 @@ function GetStartedPage() {
                 </Box>
             </Stack>
         </div>
+        
             <div>
             <Stack spacing={1} ml={3} mt={4}>
                 <Typography variant="h5" fontWeight='bold' color="#555555">Resources and Next Steps</Typography>
@@ -163,7 +164,8 @@ function GetStartedPage() {
                         <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Python</Typography>
                         <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-py/') }}>Learn More</button>
                     </Stack>
-                </Box><Box id="Resources">
+                </Box>
+                <Box id="Resources">
                 <Stack direction="row" justifyContent="space-between" alignItems="center" spacing={1} ml={3} mr={3} pt={2} pb={2}>
                         <Typography variant="h6" color="#555555">Apache Beam Quickstart Guide - Go</Typography>
                         <button className='learnMore' onClick={() => { window.open('https://beam.apache.org/get-started/quickstart-go/') }}>Learn More</button>

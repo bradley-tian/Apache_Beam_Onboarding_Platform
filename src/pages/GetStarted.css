@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6, h7, p, button {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .quickStart {
@@ -708,6 +708,7 @@ h1, h2, h3, h4, h5, h6, h7, p, button {
   animation: highlightButton;
   animation-duration: 0.5s;
   background-color: #FFD390;
+  cursor: pointer;
 }
 
 .backBtn:hover {
@@ -741,10 +742,10 @@ h1, h2, h3, h4, h5, h6, h7, p, button {
 }
 
 .frameText {
-  font-weight: 500;
+  font-weight: 320;
   margin-left: 8%;
   margin-right: 8%;
-  font-size: 1.1em;
+  font-size: 1em;
   text-align: center;
   text-justify: inter-word;
   color: #555555;

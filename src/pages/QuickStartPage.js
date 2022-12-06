@@ -46,7 +46,7 @@ export default function QuickStartPage() {
     return (
         <>
             <Grid container spacing={2}>
-                <Grid item xs={3}> 
+                <Grid item xs={3} mb={3}> 
                     <Box className="whyBeam">
                         <Typography mb={2} variant="h6" color="#555555" fontWeight="bold">WHY BEAM</Typography>
                         <Stack direction="row" spacing={2} mb={1} alignItems='center'>

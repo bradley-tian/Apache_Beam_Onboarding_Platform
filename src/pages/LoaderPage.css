@@ -424,6 +424,7 @@
     animation: highlightGSButton;
     animation-duration: 0.3s;
     height: 3.5rem;
+    cursor: pointer;
   }
 
   .configurations-normal {
